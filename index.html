@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Aparecido da Silva | Desenvolvedor Full Stack em Formação</title>
+    <meta name="description" content="Portfólio profissional de Rafael Aparecido da Silva — Estudante de ADS, Desenvolvedor em formação, focado em Python, Automação, JavaScript e Análise de Dados.">
+    <meta name="keywords" content="desenvolvedor, portfolio, python, javascript, HTML, CSS, SQL, análise de dados, ADS">
+    <meta name="author" content="Rafael Aparecido da Silva">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rafael Aparecido da Silva | Desenvolvedor">
+    <meta property="og:description" content="Portfólio profissional — Desenvolvedor em formação focado em Python, Automação e Análise de Dados.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Rafael<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#timeline" class="nav-link">Trajetória</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                    <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-gradient-orb orb-1"></div>
+            <div class="hero-gradient-orb orb-2"></div>
+            <div class="hero-gradient-orb orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge reveal-up">
+                    <span class="badge-dot"></span>
+                    Disponível para oportunidades
+                </div>
+                <h1 class="hero-title reveal-up">
+                    Olá, eu sou<br>
+                    <span class="hero-name">Rafael Aparecido</span><br>
+                    <span class="hero-name">da Silva</span>
+                </h1>
+                <p class="hero-subtitle reveal-up">
+                    <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+                </p>
+                <p class="hero-description reveal-up">
+                    Transformando ideias em soluções digitais com código limpo, 
+                    automação inteligente e paixão por tecnologia.
+                </p>
+                <div class="hero-buttons reveal-up">
+                    <a href="#projetos" class="btn btn-primary">
+                        <i data-lucide="folder-open"></i>
+                        Ver Projetos
+                    </a>
+                    <a href="#contato" class="btn btn-outline">
+                        <i data-lucide="send"></i>
+                        Contato
+                    </a>
+                </div>
+                <div class="hero-stats reveal-up">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Tecnologias</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-label">º Semestre</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal-up">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-image-wrapper">
+                        <img src="profile.png" alt="Rafael Aparecido da Silva" class="avatar-img">
+                    </div>
+                    <div class="avatar-status">
+                        <span class="status-dot"></span>
+                    </div>
+                </div>
+                <!-- Floating tech icons around avatar -->
+                <div class="floating-icons">
+                    <div class="floating-icon fi-1" title="Python">🐍</div>
+                    <div class="floating-icon fi-2" title="JavaScript">⚡</div>
+                    <div class="floating-icon fi-3" title="HTML">🌐</div>
+                    <div class="floating-icon fi-4" title="SQL">🗃️</div>
+                    <div class="floating-icon fi-5" title="CSS">🎨</div>
+                </div>
+            </div>
+        </div>
+        <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+            <i data-lucide="chevrons-down"></i>
+        </a>
+    </section>
+
+    <!-- ==================== SOBRE MIM ==================== -->
+    <section class="section" id="sobre">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag"><i data-lucide="user"></i> Sobre Mim</span>
+                <h2 class="section-title">Conheça Minha <span class="gradient-text">Trajetória</span></h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-text reveal-left">
+                    <p>
+                        Atualmente no <strong>quinto semestre</strong> de <strong>Análise e Desenvolvimento de Sistemas</strong>, 
+                        estou construindo uma base sólida em tecnologia e programação. Minha jornada acadêmica é marcada pela 
+                        busca constante por evolução — cada novo desafio é uma oportunidade de aprendizado.
+                    </p>
+                    <p>
+                        Minha principal linguagem é <strong>Python</strong>, onde desenvolvo projetos de automação e análise de dados. 
+                        Paralelamente, venho expandindo meus conhecimentos em <strong>JavaScript</strong>, <strong>HTML/CSS</strong>, 
+                        <strong>SQL</strong> e outras tecnologias que compõem o ecossistema de desenvolvimento moderno.
+                    </p>
+                    <p>
+                        Estou em busca de uma oportunidade de <strong>estágio</strong> ou <strong>vaga de Desenvolvedor Júnior</strong> 
+                        que me permita aplicar o conhecimento adquirido, crescer como profissional e contribuir com 
+                        <strong>soluções inovadoras</strong> no setor de tecnologia. Esta transição de carreira representa um 
+                        marco significativo, e meu comprometimento é total.
+                    </p>
+                    <blockquote class="sobre-quote">
+                        <i data-lucide="quote"></i>
+                        "Se você busca um profissional entusiasmado, focado no aprendizado contínuo e preparado para novos desafios — vamos nos conectar!"
+                    </blockquote>
+                </div>
+                <div class="sobre-cards reveal-right">
+                    <div class="info-card">
+                        <div class="info-card-icon"><i data-lucide="graduation-cap"></i></div>
+                        <div class="info-card-content">
+                            <h4>Formação</h4>
+                            <p>Análise e Desenvolvimento de Sistemas — 5º Semestre</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i data-lucide="map-pin"></i></div>
+                        <div class="info-card-content">
+                            <h4>Localização</h4>
+                            <p>São Paulo, SP — Brasil</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i data-lucide="target"></i></div>
+                        <div class="info-card-content">
+                            <h4>Objetivo</h4>
+                            <p>Estágio em TI / Desenvolvedor Júnior</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i data-lucide="heart"></i></div>
+                        <div class="info-card-content">
+                            <h4>Paixão</h4>
+                            <p>Automação, Dados & Desenvolvimento de Sistemas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag"><i data-lucide="code-2"></i> Skills</span>
+                <h2 class="section-title">Minhas <span class="gradient-text">Habilidades</span></h2>
+                <p class="section-description">Tecnologias e ferramentas que utilizo no dia a dia</p>
+            </div>
+            <div class="skills-grid reveal-up">
+                <!-- Skill Cards -->
+                <div class="skill-card" data-skill="Python" data-level="80">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#FFD43B" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 5.345-15.425 15.508-2.267 11.636-2.367 18.9 0 31.064C16.419 84.257 21.241 89 28.417 89h8.583V77.282c0-8.151 7.05-15.34 15.425-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.832c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.699-1.007zM46.928 9.136c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.084 4.693-4.634 4.693-2.56 0-4.633-2.1-4.633-4.693-.001-2.604 2.073-4.721 4.633-4.721z"/><path fill="#4584B6" d="M91.682 28.547v11.218c0 8.5-7.208 15.84-15.425 15.84H51.592c-6.752 0-12.346 5.783-12.346 12.548v23.524c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.136h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.263-1.774-7.262-5.161-12.519-12.348-12.519h-9.268zM81.191 104.18c2.56 0 4.633 2.1 4.633 4.694 0 2.604-2.073 4.72-4.633 4.72-2.55 0-4.634-2.116-4.634-4.72 0-2.594 2.083-4.694 4.634-4.694z"/></svg>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+
+                <div class="skill-card" data-skill="Automação" data-level="75">
+                    <div class="skill-icon">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <h3 class="skill-name">Automação em Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+
+                <div class="skill-card" data-skill="HTML" data-level="85">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/></svg>
+                    </div>
+                    <h3 class="skill-name">HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-card" data-skill="CSS" data-level="80">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543z"/><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V24.208h34.682l-.332 3.711-3.4 38.114H64.001z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881z"/><path fill="#EBEBEB" d="M64.048 24.208v13.058H30.64l-.277-3.108-.63-7.045-.331-2.905zm-.047 27.221v13.058H46.251l-.277-3.108-.631-7.044-.33-2.906z"/></svg>
+                    </div>
+                    <h3 class="skill-name">CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+
+                <div class="skill-card" data-skill="JavaScript" data-level="65">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.392-3.498 9.166-5.838-1.518-2.267-2.267-3.259-3.283-4.271-3.534-3.949-7.794-5.926-15.049-5.739l-3.732.477c-3.581.858-6.997 2.804-8.989 5.235-5.927 6.848-4.22 18.865 2.955 23.821 7.097 5.438 17.497 6.641 18.825 11.763 1.266 6.136-4.558 8.104-10.339 7.387-4.271-1.018-6.641-3.2-9.228-7.309l-9.607 5.534c1.102 2.384 2.336 3.37 4.236 5.417 9.171 9.394 32.103 8.921 36.228-5.366.142-.459 1.193-3.558.397-8.303zM73.049 32.274H62.765c0 12.232-.015 24.449-.015 36.689 0 7.809.397 14.977-.452 17.174-1.4 4.581-5.034 5.718-8.387 5.025-3.429-1.042-5.176-3.32-7.184-6.136l-9.592 5.838c1.615 3.32 3.985 6.173 6.997 8.028 4.482 2.762 10.501 3.664 16.825 2.127 4.122-1.266 7.668-3.9 9.546-7.794 2.704-5.291 2.142-11.791 2.113-19.056.075-12.661.03-25.322.03-37.96z"/></svg>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 65%"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+
+                <div class="skill-card" data-skill="Claude" data-level="90">
+                    <div class="skill-icon">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h3 class="skill-name">Claude AI</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-card" data-skill="Antigravity" data-level="90">
+                    <div class="skill-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="skill-name">Antigravity</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-card" data-skill="SQL" data-level="70">
+                    <div class="skill-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <h3 class="skill-name">SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+
+                <div class="skill-card" data-skill="Análise de Dados" data-level="65">
+                    <div class="skill-icon">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <h3 class="skill-name">Análise de Dados</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 65%"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+
+                <div class="skill-card" data-skill="Git" data-level="60">
+                    <div class="skill-icon">
+                        <i data-lucide="git-branch"></i>
+                    </div>
+                    <h3 class="skill-name">Git & GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--progress: 60%"></div>
+                    </div>
+                    <span class="skill-percent">60%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TIMELINE ==================== -->
+    <section class="section" id="timeline">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag"><i data-lucide="briefcase"></i> Trajetória</span>
+                <h2 class="section-title">Experiência & <span class="gradient-text">Formação</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"><i data-lucide="graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 — Presente</span>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="timeline-place">5º Semestre — Formação Superior</p>
+                        <p>Desenvolvendo uma base sólida em programação, banco de dados, engenharia de software e metodologias ágeis. Foco em projetos práticos com Python, JavaScript e SQL.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Engenharia de Software</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"><i data-lucide="search"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Projeto: BusqExames</h3>
+                        <p class="timeline-place">Projeto Acadêmico</p>
+                        <p>Plataforma de busca e comparação de exames médicos, facilitando o acesso à informação de saúde de forma prática e eficiente. <strong>(Em Desenvolvimento)</strong></p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"><i data-lucide="code-2"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Projeto: Pet Tech Security</h3>
+                        <p class="timeline-place">Projeto Acadêmico</p>
+                        <p>Desenvolvimento de sistema focado em segurança tecnológica para o segmento pet, integrando soluções de monitoramento e proteção digital.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Segurança</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"><i data-lucide="map"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Projeto: Rota Segura</h3>
+                        <p class="timeline-place">Projeto Acadêmico</p>
+                        <p>Aplicação voltada para segurança urbana, oferecendo rotas mais seguras baseadas em dados de ocorrências e análise geoespacial. <strong>(Em Desenvolvimento)</strong></p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Análise de Dados</span>
+                            <span class="tag">Geolocalização</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"><i data-lucide="bot"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Automação com Python</h3>
+                        <p class="timeline-place">Projeto Pessoal</p>
+                        <p>Desenvolvimento de scripts de automação utilizando PyAutoGUI para automatização de tarefas repetitivas, incluindo automação de processos no Instagram.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyAutoGUI</span>
+                            <span class="tag">Automação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section class="section section-alt" id="projetos">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag"><i data-lucide="folder-open"></i> Projetos</span>
+                <h2 class="section-title">Meus <span class="gradient-text">Projetos</span></h2>
+                <p class="section-description">Conheça os projetos que desenvolvi ao longo da minha jornada</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Pet Tech Security -->
+                <div class="project-card reveal-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Segurança & IoT</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Pet Tech Security</h3>
+                        <p class="project-description">
+                            Sistema de segurança tecnológica para o segmento pet, com soluções de monitoramento inteligente e proteção digital para animais de estimação.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Segurança</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/design/sTdlgOwUu5HEKiTlfaSo1s/Pet-Tech-Security?node-id=0-1&p=f&t=D1itxT5CgS31BGyt-0" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-lucide="figma"></i> Design Figma
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Rota Segura -->
+                <div class="project-card reveal-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Segurança Urbana</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Rota Segura <span class="status-badge">Em Desenvolvimento</span></h3>
+                        <p class="project-description">
+                            Aplicação que analisa dados de ocorrências urbanas para sugerir as rotas mais seguras, 
+                            utilizando análise geoespacial e visualização de dados.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Análise de Dados</span>
+                            <span class="tech-tag">Geo</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aparecc" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-lucide="github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: BusqExames -->
+                <div class="project-card reveal-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i data-lucide="heart-pulse"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Saúde Digital</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BusqExames <span class="status-badge">Em Desenvolvimento</span></h3>
+                        <p class="project-description">
+                            Plataforma de busca e comparação de exames médicos, facilitando o acesso à informação 
+                            de saúde de forma prática, rápida e eficiente.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aparecc" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-lucide="github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Automação Instagram -->
+                <div class="project-card reveal-up">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i data-lucide="bot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Automação</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Automação Instagram</h3>
+                        <p class="project-description">
+                            Script em Python utilizando PyAutoGUI para automação de tarefas no Instagram, 
+                            otimizando processos repetitivos de forma inteligente.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyAutoGUI</span>
+                            <span class="tech-tag">Automação</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Aparecc/Automa-o_instagram" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i data-lucide="github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section class="section" id="contato">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag"><i data-lucide="mail"></i> Contato</span>
+                <h2 class="section-title">Vamos nos <span class="gradient-text">Conectar</span>?</h2>
+                <p class="section-description">Estou aberto a oportunidades e adoraria ouvir de você!</p>
+            </div>
+            <div class="contato-grid">
+                <div class="contato-info reveal-left">
+                    <div class="contato-card">
+                        <a href="mailto:fael_alpha@hotmail.com" class="contato-link">
+                            <div class="contato-icon"><i data-lucide="mail"></i></div>
+                            <div class="contato-details">
+                                <h4>E-mail</h4>
+                                <p>fael_alpha@hotmail.com</p>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="contato-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="contato-card">
+                        <a href="https://www.linkedin.com/in/aparec/" target="_blank" rel="noopener noreferrer" class="contato-link">
+                            <div class="contato-icon linkedin-icon"><i data-lucide="linkedin"></i></div>
+                            <div class="contato-details">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/aparec</p>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="contato-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="contato-card">
+                        <a href="https://github.com/Aparecc" target="_blank" rel="noopener noreferrer" class="contato-link">
+                            <div class="contato-icon github-icon"><i data-lucide="github"></i></div>
+                            <div class="contato-details">
+                                <h4>GitHub</h4>
+                                <p>github.com/Aparecc</p>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="contato-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contato-form-wrapper reveal-right">
+                    <form class="contato-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Sua mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                    <p class="form-instruction">O formulário utiliza <strong>Formspree</strong> para envio real. <a href="https://formspree.io/register" target="_blank">Clique aqui</a> para configurar seu próprio ID gratuitamente e receber os e-mails.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Rafael<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/aparec/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/Aparecc" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="mailto:fael_alpha@hotmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Rafael Aparecido da Silva. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
